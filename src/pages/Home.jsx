@@ -1,17 +1,14 @@
+import { Routes, Route, Link } from 'react-router-dom';
+
 export default function Home() {
   return (
     <>
-     <nav>
-        <Link to="/">Home</Link> |{' '}
-        <Link to="/projects">Projects</Link> |{' '}
-        <Link to="/contact">Contact</Link>
-      </nav>
     <main className="home">
       <section className="hero">
-        <h1>Hello, I’m Lethelay</h1>
+        <h1>Hi there! I'm Lethelay!</h1>
         <p>
-          Welcome to my personal website. I’m a [your profession, e.g. web developer]
-          who loves building cool things with code.
+          Welcome to my little corner.
+          I’m an artist and interaction design student with many interests and a love for a multitude of different projects.
         </p>
         <a href="/projects" className="button">View My Projects</a>
       </section>
