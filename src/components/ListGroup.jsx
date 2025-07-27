@@ -1,13 +1,20 @@
 function ListGroup() {
+  const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+
+  const getNoItemsMsg = () => {
+    return items.length === 0 && <p>No item found</p>;
+  };
+
   return (
     <>
       <h1>List</h1>
+      {getNoItemsMsg(items.length)}
       <ul class="list-group">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-        <li class="list-group-item">A fourth item</li>
-        <li class="list-group-item">And a fifth one</li>
+        {items.map((item) => (
+          <li class="list-group-item" key={item}>
+            {item}
+          </li>
+        ))}
       </ul>
     </>
   );
