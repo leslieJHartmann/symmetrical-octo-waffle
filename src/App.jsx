@@ -1,8 +1,8 @@
 import { Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
 import Projects from './pages/Projects.jsx';
 import ArtandIllustation from './pages/ArtandIllustration.jsx';
+import Home from './pages/Home.jsx';
 
 
 
