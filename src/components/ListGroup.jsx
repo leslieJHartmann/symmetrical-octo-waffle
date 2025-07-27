@@ -9,9 +9,13 @@ function ListGroup() {
     <>
       <h1>List</h1>
       {getNoItemsMsg(items.length)}
-      <ul class="list-group">
+      <ul className="list-group">
         {items.map((item) => (
-          <li class="list-group-item" key={item}>
+          <li
+            className="list-group-item"
+            key={item}
+            onClick={() => console.log("clicked " + item)}
+          >
             {item}
           </li>
         ))}
